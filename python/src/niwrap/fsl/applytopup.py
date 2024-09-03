@@ -6,7 +6,7 @@ import pathlib
 import typing
 
 APPLYTOPUP_METADATA = Metadata(
-    id="aec797dcb0b04047b29b2ebf96bc40e45b01edd2",
+    id="02fa562b5a5c9f351946710051974a5ad496028e",
     name="applytopup",
     container_image_type="docker",
     container_image_tag="mcin/fsl:6.0.5",
@@ -27,6 +27,7 @@ def applytopup(
     imain: list[InputPathType],
     datain: InputPathType,
     inindex: list[str],
+    topup_dir: InputPathType,
     topup: str,
     out: str,
     method: typing.Literal["jac", "lsr"] | None = None,
@@ -46,6 +47,7 @@ def applytopup(
         datain: Name of text file with PE directions/times.
         inindex: Comma separated list of indices into --datain of the input\
             image (to be corrected).
+        topup_dir: Parent directory of topup prefix.
         topup: Name of field/movements (from topup).
         out: Basename for output (warped) image.
         method: Use jacobian modulation (jac) or least-squares resampling\
@@ -64,7 +66,11 @@ def applytopup(
     cargs.append(("--imain=" + ",".join([execution.input_file(f) for f in imain])))
     cargs.append(("--datain=" + execution.input_file(datain)))
     cargs.append(("--inindex=" + ",".join(inindex)))
-    cargs.append(("--topup=" + topup))
+    cargs.append(
+        "[TOPUP_PARENT]/" +
+        topup +
+        ""
+    )
     cargs.append(("--out=" + out))
     if method is not None:
         cargs.append(("--method=" + method))

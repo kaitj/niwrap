@@ -47,7 +47,7 @@
       "command-line-flag": "--topup",
       "command-line-flag-separator": "=",
       "description": "Parent directory of topup prefix",
-      "value-key": "[TOPUP_PREFIX]",
+      "value-key": "[TOPUP_PARENT]",
       "type": "File",
       "optional": false,
       "id": "topup_dir",
