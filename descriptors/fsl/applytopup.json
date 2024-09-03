@@ -3,7 +3,7 @@
   "name": "applytopup",
   "author": "University of Oxford (Jesper Andersson)",
   "description": "applytopup applies corrections to images using the field estimates produced by topup.",
-  "command-line": "applytopup [IMAIN] [DATAIN] [ININDEX] [TOPUP] [OUT] [METHOD] [INTERP] [DATATYPE] [VERBOSE]",
+  "command-line": "applytopup [IMAIN] [DATAIN] [ININDEX] [TOPUP_PARENT]/[TOPUP_PREFIX] [OUT] [METHOD] [INTERP] [DATATYPE] [VERBOSE]",
   "container-image": {
     "image": "mcin/fsl:6.0.5",
     "type": "docker"
@@ -46,8 +46,16 @@
     {
       "command-line-flag": "--topup",
       "command-line-flag-separator": "=",
+      "description": "Parent directory of topup prefix",
+      "value-key": "[TOPUP_PREFIX]",
+      "type": "File",
+      "optional": false,
+      "id": "topup_dir",
+      "name": "Topup prefix parent directory"
+    },
+    {
       "description": "Name of field/movements (from topup)",
-      "value-key": "[TOPUP]",
+      "value-key": "[TOPUP_PREFIX]",
       "type": "String",
       "optional": false,
       "id": "topup",
