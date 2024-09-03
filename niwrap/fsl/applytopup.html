@@ -80,7 +80,7 @@
 </span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="kn">import</span> <span class="nn">typing</span>
 </span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a>
 </span><span id="L-8"><a href="#L-8"><span class="linenos"> 8</span></a><span class="n">APPLYTOPUP_METADATA</span> <span class="o">=</span> <span class="n">Metadata</span><span class="p">(</span>
-</span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a>    <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;02fa562b5a5c9f351946710051974a5ad496028e&quot;</span><span class="p">,</span>
+</span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a>    <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;fd1be1d90827197c0977fd699d7d26d92124e693&quot;</span><span class="p">,</span>
 </span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a>    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;applytopup&quot;</span><span class="p">,</span>
 </span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a>    <span class="n">container_image_type</span><span class="o">=</span><span class="s2">&quot;docker&quot;</span><span class="p">,</span>
 </span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a>    <span class="n">container_image_tag</span><span class="o">=</span><span class="s2">&quot;mcin/fsl:6.0.5&quot;</span><span class="p">,</span>
@@ -141,9 +141,9 @@
 </span><span id="L-67"><a href="#L-67"><span class="linenos">67</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s2">&quot;--datain=&quot;</span> <span class="o">+</span> <span class="n">execution</span><span class="o">.</span><span class="n">input_file</span><span class="p">(</span><span class="n">datain</span><span class="p">)))</span>
 </span><span id="L-68"><a href="#L-68"><span class="linenos">68</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s2">&quot;--inindex=&quot;</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">inindex</span><span class="p">)))</span>
 </span><span id="L-69"><a href="#L-69"><span class="linenos">69</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-</span><span id="L-70"><a href="#L-70"><span class="linenos">70</span></a>        <span class="s2">&quot;[TOPUP_PARENT]/&quot;</span> <span class="o">+</span>
-</span><span id="L-71"><a href="#L-71"><span class="linenos">71</span></a>        <span class="n">topup</span> <span class="o">+</span>
-</span><span id="L-72"><a href="#L-72"><span class="linenos">72</span></a>        <span class="s2">&quot;&quot;</span>
+</span><span id="L-70"><a href="#L-70"><span class="linenos">70</span></a>        <span class="p">(</span><span class="s2">&quot;--topup=&quot;</span> <span class="o">+</span> <span class="n">execution</span><span class="o">.</span><span class="n">input_file</span><span class="p">(</span><span class="n">topup_dir</span><span class="p">))</span> <span class="o">+</span>
+</span><span id="L-71"><a href="#L-71"><span class="linenos">71</span></a>        <span class="s2">&quot;/&quot;</span> <span class="o">+</span>
+</span><span id="L-72"><a href="#L-72"><span class="linenos">72</span></a>        <span class="n">topup</span>
 </span><span id="L-73"><a href="#L-73"><span class="linenos">73</span></a>    <span class="p">)</span>
 </span><span id="L-74"><a href="#L-74"><span class="linenos">74</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s2">&quot;--out=&quot;</span> <span class="o">+</span> <span class="n">out</span><span class="p">))</span>
 </span><span id="L-75"><a href="#L-75"><span class="linenos">75</span></a>    <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
@@ -175,7 +175,7 @@
                     <div class="attr variable">
             <span class="name">APPLYTOPUP_METADATA</span>        =
 <input id="APPLYTOPUP_METADATA-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-            <label class="view-value-button pdoc-button" for="APPLYTOPUP_METADATA-view-value"></label><span class="default_value">Metadata(id=&#39;02fa562b5a5c9f351946710051974a5ad496028e&#39;, name=&#39;applytopup&#39;, package=None, citations=None, container_image_type=&#39;docker&#39;, container_image_tag=&#39;mcin/fsl:6.0.5&#39;, container_image_index=None, container_image_opts=None)</span>
+            <label class="view-value-button pdoc-button" for="APPLYTOPUP_METADATA-view-value"></label><span class="default_value">Metadata(id=&#39;fd1be1d90827197c0977fd699d7d26d92124e693&#39;, name=&#39;applytopup&#39;, package=None, citations=None, container_image_type=&#39;docker&#39;, container_image_tag=&#39;mcin/fsl:6.0.5&#39;, container_image_index=None, container_image_opts=None)</span>
 
         
     </div>
@@ -316,9 +316,9 @@
 </span><span id="applytopup-68"><a href="#applytopup-68"><span class="linenos">68</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s2">&quot;--datain=&quot;</span> <span class="o">+</span> <span class="n">execution</span><span class="o">.</span><span class="n">input_file</span><span class="p">(</span><span class="n">datain</span><span class="p">)))</span>
 </span><span id="applytopup-69"><a href="#applytopup-69"><span class="linenos">69</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s2">&quot;--inindex=&quot;</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">inindex</span><span class="p">)))</span>
 </span><span id="applytopup-70"><a href="#applytopup-70"><span class="linenos">70</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-</span><span id="applytopup-71"><a href="#applytopup-71"><span class="linenos">71</span></a>        <span class="s2">&quot;[TOPUP_PARENT]/&quot;</span> <span class="o">+</span>
-</span><span id="applytopup-72"><a href="#applytopup-72"><span class="linenos">72</span></a>        <span class="n">topup</span> <span class="o">+</span>
-</span><span id="applytopup-73"><a href="#applytopup-73"><span class="linenos">73</span></a>        <span class="s2">&quot;&quot;</span>
+</span><span id="applytopup-71"><a href="#applytopup-71"><span class="linenos">71</span></a>        <span class="p">(</span><span class="s2">&quot;--topup=&quot;</span> <span class="o">+</span> <span class="n">execution</span><span class="o">.</span><span class="n">input_file</span><span class="p">(</span><span class="n">topup_dir</span><span class="p">))</span> <span class="o">+</span>
+</span><span id="applytopup-72"><a href="#applytopup-72"><span class="linenos">72</span></a>        <span class="s2">&quot;/&quot;</span> <span class="o">+</span>
+</span><span id="applytopup-73"><a href="#applytopup-73"><span class="linenos">73</span></a>        <span class="n">topup</span>
 </span><span id="applytopup-74"><a href="#applytopup-74"><span class="linenos">74</span></a>    <span class="p">)</span>
 </span><span id="applytopup-75"><a href="#applytopup-75"><span class="linenos">75</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s2">&quot;--out=&quot;</span> <span class="o">+</span> <span class="n">out</span><span class="p">))</span>
 </span><span id="applytopup-76"><a href="#applytopup-76"><span class="linenos">76</span></a>    <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
