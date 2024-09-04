@@ -80,7 +80,7 @@
 </span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a><span class="kn">import</span> <span class="nn">typing</span>
 </span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a>
 </span><span id="L-8"><a href="#L-8"><span class="linenos"> 8</span></a><span class="n">APPLYTOPUP_METADATA</span> <span class="o">=</span> <span class="n">Metadata</span><span class="p">(</span>
-</span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a>    <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;fd1be1d90827197c0977fd699d7d26d92124e693&quot;</span><span class="p">,</span>
+</span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a>    <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;730f69c374727611696c4d59b5ee10177debd98f&quot;</span><span class="p">,</span>
 </span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a>    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;applytopup&quot;</span><span class="p">,</span>
 </span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a>    <span class="n">container_image_type</span><span class="o">=</span><span class="s2">&quot;docker&quot;</span><span class="p">,</span>
 </span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a>    <span class="n">container_image_tag</span><span class="o">=</span><span class="s2">&quot;mcin/fsl:6.0.5&quot;</span><span class="p">,</span>
@@ -156,7 +156,7 @@
 </span><span id="L-82"><a href="#L-82"><span class="linenos">82</span></a>        <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;--verbose&quot;</span><span class="p">)</span>
 </span><span id="L-83"><a href="#L-83"><span class="linenos">83</span></a>    <span class="n">ret</span> <span class="o">=</span> <span class="n">ApplytopupOutputs</span><span class="p">(</span>
 </span><span id="L-84"><a href="#L-84"><span class="linenos">84</span></a>        <span class="n">root</span><span class="o">=</span><span class="n">execution</span><span class="o">.</span><span class="n">output_file</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">),</span>
-</span><span id="L-85"><a href="#L-85"><span class="linenos">85</span></a>        <span class="n">output_file</span><span class="o">=</span><span class="n">execution</span><span class="o">.</span><span class="n">output_file</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">out</span><span class="si">}</span><span class="s2">_abswarp.nii.gz&quot;</span><span class="p">),</span>
+</span><span id="L-85"><a href="#L-85"><span class="linenos">85</span></a>        <span class="n">output_file</span><span class="o">=</span><span class="n">execution</span><span class="o">.</span><span class="n">output_file</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">out</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">),</span>
 </span><span id="L-86"><a href="#L-86"><span class="linenos">86</span></a>    <span class="p">)</span>
 </span><span id="L-87"><a href="#L-87"><span class="linenos">87</span></a>    <span class="n">execution</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">cargs</span><span class="p">)</span>
 </span><span id="L-88"><a href="#L-88"><span class="linenos">88</span></a>    <span class="k">return</span> <span class="n">ret</span>
@@ -175,7 +175,7 @@
                     <div class="attr variable">
             <span class="name">APPLYTOPUP_METADATA</span>        =
 <input id="APPLYTOPUP_METADATA-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-            <label class="view-value-button pdoc-button" for="APPLYTOPUP_METADATA-view-value"></label><span class="default_value">Metadata(id=&#39;fd1be1d90827197c0977fd699d7d26d92124e693&#39;, name=&#39;applytopup&#39;, package=None, citations=None, container_image_type=&#39;docker&#39;, container_image_tag=&#39;mcin/fsl:6.0.5&#39;, container_image_index=None, container_image_opts=None)</span>
+            <label class="view-value-button pdoc-button" for="APPLYTOPUP_METADATA-view-value"></label><span class="default_value">Metadata(id=&#39;730f69c374727611696c4d59b5ee10177debd98f&#39;, name=&#39;applytopup&#39;, package=None, citations=None, container_image_type=&#39;docker&#39;, container_image_tag=&#39;mcin/fsl:6.0.5&#39;, container_image_index=None, container_image_opts=None)</span>
 
         
     </div>
@@ -331,7 +331,7 @@
 </span><span id="applytopup-83"><a href="#applytopup-83"><span class="linenos">83</span></a>        <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;--verbose&quot;</span><span class="p">)</span>
 </span><span id="applytopup-84"><a href="#applytopup-84"><span class="linenos">84</span></a>    <span class="n">ret</span> <span class="o">=</span> <span class="n">ApplytopupOutputs</span><span class="p">(</span>
 </span><span id="applytopup-85"><a href="#applytopup-85"><span class="linenos">85</span></a>        <span class="n">root</span><span class="o">=</span><span class="n">execution</span><span class="o">.</span><span class="n">output_file</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">),</span>
-</span><span id="applytopup-86"><a href="#applytopup-86"><span class="linenos">86</span></a>        <span class="n">output_file</span><span class="o">=</span><span class="n">execution</span><span class="o">.</span><span class="n">output_file</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">out</span><span class="si">}</span><span class="s2">_abswarp.nii.gz&quot;</span><span class="p">),</span>
+</span><span id="applytopup-86"><a href="#applytopup-86"><span class="linenos">86</span></a>        <span class="n">output_file</span><span class="o">=</span><span class="n">execution</span><span class="o">.</span><span class="n">output_file</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">out</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">),</span>
 </span><span id="applytopup-87"><a href="#applytopup-87"><span class="linenos">87</span></a>    <span class="p">)</span>
 </span><span id="applytopup-88"><a href="#applytopup-88"><span class="linenos">88</span></a>    <span class="n">execution</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">cargs</span><span class="p">)</span>
 </span><span id="applytopup-89"><a href="#applytopup-89"><span class="linenos">89</span></a>    <span class="k">return</span> <span class="n">ret</span>
