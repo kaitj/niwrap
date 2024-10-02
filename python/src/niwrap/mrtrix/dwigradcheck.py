@@ -7,7 +7,7 @@ from styxdefs import *
 import dataclasses
 
 DWIGRADCHECK_METADATA = Metadata(
-    id="640f8310ac9efa10baa6829f1058ce0830fa1f11.boutiques",
+    id="67e14ebf5539cb7f455e1a68f45cb43ba740de0c.boutiques",
     name="dwigradcheck",
     package="mrtrix",
     container_image_tag="mrtrix3/mrtrix3:3.0.4",
@@ -196,7 +196,7 @@ def dwigradcheck(
     runner = runner or get_global_runner()
     execution = runner.start_execution(DWIGRADCHECK_METADATA)
     cargs = []
-    cargs.append("dwigradcorrect")
+    cargs.append("dwigradcheck")
     cargs.append(execution.input_file(input_image))
     if grad is not None:
         cargs.extend([
