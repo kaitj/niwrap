@@ -163,7 +163,8 @@
       },
       {
         "target": "avw2fsl",
-        "status": "missing"
+        "status": "done",
+        "descriptor": "descriptors/fsl/avw2fsl.json"
       },
       {
         "target": "b0calc",
@@ -420,7 +421,8 @@
       },
       {
         "target": "fabber_asl",
-        "status": "missing"
+        "status": "done",
+        "descriptor": "descriptors/fsl/fabber_asl.json"
       },
       {
         "target": "fabber_cest",
@@ -440,19 +442,23 @@
       },
       {
         "target": "fabber_dwi",
-        "status": "missing"
+        "status": "done",
+        "descriptor": "descriptors/fsl/fabber_dwi.json"
       },
       {
         "target": "fabber_pet",
-        "status": "missing"
+        "status": "done",
+        "descriptor": "descriptors/fsl/fabber_pet.json"
       },
       {
         "target": "fabber_qbold",
-        "status": "missing"
+        "status": "done",
+        "descriptor": "descriptors/fsl/fabber_qbold.json"
       },
       {
         "target": "fabber_t1",
-        "status": "missing"
+        "status": "done",
+        "descriptor": "descriptors/fsl/fabber_t1.json"
       },
       {
         "target": "fabber_var",
@@ -941,7 +947,8 @@
       },
       {
         "target": "fslvbm_3_proc",
-        "status": "missing"
+        "status": "done",
+        "descriptor": "descriptors/fsl/fslvbm_3_proc.json"
       },
       {
         "target": "fslview",
@@ -1073,7 +1080,8 @@
       },
       {
         "target": "make_bianca_mask",
-        "status": "missing"
+        "status": "done",
+        "descriptor": "descriptors/fsl/make_bianca_mask.json"
       },
       {
         "target": "make_dyadic_vectors",
@@ -1097,7 +1105,8 @@
       },
       {
         "target": "mccutup",
-        "status": "missing"
+        "status": "done",
+        "descriptor": "descriptors/fsl/mccutup.json"
       },
       {
         "target": "mcflirt",
