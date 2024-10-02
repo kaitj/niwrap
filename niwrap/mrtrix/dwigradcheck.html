@@ -144,7 +144,7 @@
 </span><span id="L-7"><a href="#L-7"><span class="linenos">  7</span></a><span class="kn">import</span> <span class="nn">dataclasses</span>
 </span><span id="L-8"><a href="#L-8"><span class="linenos">  8</span></a>
 </span><span id="L-9"><a href="#L-9"><span class="linenos">  9</span></a><span class="n">DWIGRADCHECK_METADATA</span> <span class="o">=</span> <span class="n">Metadata</span><span class="p">(</span>
-</span><span id="L-10"><a href="#L-10"><span class="linenos"> 10</span></a>    <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;640f8310ac9efa10baa6829f1058ce0830fa1f11.boutiques&quot;</span><span class="p">,</span>
+</span><span id="L-10"><a href="#L-10"><span class="linenos"> 10</span></a>    <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;67e14ebf5539cb7f455e1a68f45cb43ba740de0c.boutiques&quot;</span><span class="p">,</span>
 </span><span id="L-11"><a href="#L-11"><span class="linenos"> 11</span></a>    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;dwigradcheck&quot;</span><span class="p">,</span>
 </span><span id="L-12"><a href="#L-12"><span class="linenos"> 12</span></a>    <span class="n">package</span><span class="o">=</span><span class="s2">&quot;mrtrix&quot;</span><span class="p">,</span>
 </span><span id="L-13"><a href="#L-13"><span class="linenos"> 13</span></a>    <span class="n">container_image_tag</span><span class="o">=</span><span class="s2">&quot;mrtrix3/mrtrix3:3.0.4&quot;</span><span class="p">,</span>
@@ -333,7 +333,7 @@
 </span><span id="L-196"><a href="#L-196"><span class="linenos">196</span></a>    <span class="n">runner</span> <span class="o">=</span> <span class="n">runner</span> <span class="ow">or</span> <span class="n">get_global_runner</span><span class="p">()</span>
 </span><span id="L-197"><a href="#L-197"><span class="linenos">197</span></a>    <span class="n">execution</span> <span class="o">=</span> <span class="n">runner</span><span class="o">.</span><span class="n">start_execution</span><span class="p">(</span><span class="n">DWIGRADCHECK_METADATA</span><span class="p">)</span>
 </span><span id="L-198"><a href="#L-198"><span class="linenos">198</span></a>    <span class="n">cargs</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="L-199"><a href="#L-199"><span class="linenos">199</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;dwigradcorrect&quot;</span><span class="p">)</span>
+</span><span id="L-199"><a href="#L-199"><span class="linenos">199</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;dwigradcheck&quot;</span><span class="p">)</span>
 </span><span id="L-200"><a href="#L-200"><span class="linenos">200</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">execution</span><span class="o">.</span><span class="n">input_file</span><span class="p">(</span><span class="n">input_image</span><span class="p">))</span>
 </span><span id="L-201"><a href="#L-201"><span class="linenos">201</span></a>    <span class="k">if</span> <span class="n">grad</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 </span><span id="L-202"><a href="#L-202"><span class="linenos">202</span></a>        <span class="n">cargs</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span>
@@ -419,7 +419,7 @@
                     <div class="attr variable">
             <span class="name">DWIGRADCHECK_METADATA</span>        =
 <input id="DWIGRADCHECK_METADATA-view-value" class="view-value-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-            <label class="view-value-button pdoc-button" for="DWIGRADCHECK_METADATA-view-value"></label><span class="default_value">Metadata(id=&#39;640f8310ac9efa10baa6829f1058ce0830fa1f11.boutiques&#39;, name=&#39;dwigradcheck&#39;, package=&#39;mrtrix&#39;, citations=None, container_image_tag=&#39;mrtrix3/mrtrix3:3.0.4&#39;)</span>
+            <label class="view-value-button pdoc-button" for="DWIGRADCHECK_METADATA-view-value"></label><span class="default_value">Metadata(id=&#39;67e14ebf5539cb7f455e1a68f45cb43ba740de0c.boutiques&#39;, name=&#39;dwigradcheck&#39;, package=&#39;mrtrix&#39;, citations=None, container_image_tag=&#39;mrtrix3/mrtrix3:3.0.4&#39;)</span>
 
         
     </div>
@@ -1065,7 +1065,7 @@ used.</p>
 </span><span id="dwigradcheck-197"><a href="#dwigradcheck-197"><span class="linenos">197</span></a>    <span class="n">runner</span> <span class="o">=</span> <span class="n">runner</span> <span class="ow">or</span> <span class="n">get_global_runner</span><span class="p">()</span>
 </span><span id="dwigradcheck-198"><a href="#dwigradcheck-198"><span class="linenos">198</span></a>    <span class="n">execution</span> <span class="o">=</span> <span class="n">runner</span><span class="o">.</span><span class="n">start_execution</span><span class="p">(</span><span class="n">DWIGRADCHECK_METADATA</span><span class="p">)</span>
 </span><span id="dwigradcheck-199"><a href="#dwigradcheck-199"><span class="linenos">199</span></a>    <span class="n">cargs</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="dwigradcheck-200"><a href="#dwigradcheck-200"><span class="linenos">200</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;dwigradcorrect&quot;</span><span class="p">)</span>
+</span><span id="dwigradcheck-200"><a href="#dwigradcheck-200"><span class="linenos">200</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;dwigradcheck&quot;</span><span class="p">)</span>
 </span><span id="dwigradcheck-201"><a href="#dwigradcheck-201"><span class="linenos">201</span></a>    <span class="n">cargs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">execution</span><span class="o">.</span><span class="n">input_file</span><span class="p">(</span><span class="n">input_image</span><span class="p">))</span>
 </span><span id="dwigradcheck-202"><a href="#dwigradcheck-202"><span class="linenos">202</span></a>    <span class="k">if</span> <span class="n">grad</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 </span><span id="dwigradcheck-203"><a href="#dwigradcheck-203"><span class="linenos">203</span></a>        <span class="n">cargs</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span>
